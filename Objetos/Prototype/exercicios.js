@@ -36,4 +36,4 @@ li.offsetLeft; // number
 li.click(); // error
 
 // Qual o construtor do dado abaixo:
-li.hidden.constructor.name; // boolean
+li.hidden.constructor.name; // string
