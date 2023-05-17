@@ -50,3 +50,29 @@ const carro2 = ["Ford", "Fiat", "VW", "Honda"];
 
 carro2.splice(2, 0, "Mercedes", "X6");
 console.log(carro2);
+
+// concat() irá concatenar a array com o valor passado.
+
+const car = ["Honda", "VW", "Fiat", "VAN"];
+const motos = ["BMW", "XRE", "HONDA", "BIS"];
+const veiculos = [].concat(motos, car);
+
+console.log(veiculos);
+
+/** includes(valor) verifica se a array possui o valor e retorna True ou False.
+ *  indexOf(valor) Verifica se a array possui o valor e retorna o index do primeiro valor na array
+    lastIndexOf(valor) retorna o index do ultimo */
+
+const linguagens = ["html", "css", "js", "php", "python", "js"];
+
+linguagens.includes("css"); // true
+linguagens.includes("ruby"); // false
+linguagens.indexOf("python"); // 4
+linguagens.indexOf("js"); // 2
+linguagens.lastIndexOf("js"); // 5
+
+let joinArray = linguagens.join("-");
+console.log(joinArray);
+
+// .slice() retorna os itens da array começando pelo início e indo até o valor de final.
+console.log(linguagens.slice(1, 3));
