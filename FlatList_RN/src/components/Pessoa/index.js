@@ -6,7 +6,9 @@ export default function Pessoa(props) {
     <View style={styles.areaPessoa}>
       <Text style={{ color: "#fff", marginLeft: 30 }}>{props.data._id}</Text>
       <Text style={{ color: "#fff", marginLeft: 30 }}>{props.data.nome}</Text>
-      <Text style={{ color: "#fff", marginLeft: 30 }}>{props.data.idade}</Text>
+      <Text style={{ color: "#fff", marginLeft: 30 }}>
+        {props.data.idade} anos
+      </Text>
       <Text style={{ color: "#fff", marginLeft: 30 }}>{props.data.email}</Text>
     </View>
   );
